@@ -9,6 +9,9 @@ export const translations = {
     approved: 'Approved',
     held: 'On Hold',
     languageLabel: 'Language',
+    severityHigh: 'HIGH',
+    severityMedium: 'MEDIUM',
+    severityLow: 'LOW',
 
     action1Title: 'Batch #221 QA Sign-off',
     action1Context: 'Cpk below target, requires supervisor approval before release.',
@@ -31,6 +34,9 @@ export const translations = {
     approved: 'स्वीकृत',
     held: 'रोका गया',
     languageLabel: 'भाषा',
+    severityHigh: 'उच्च',
+    severityMedium: 'मध्यम',
+    severityLow: 'निम्न',
 
     action1Title: 'बैच #221 क्यूए हस्ताक्षर',
     action1Context: 'Cpk लक्ष्य से कम है, रिलीज़ से पहले पर्यवेक्षक अनुमोदन आवश्यक।',

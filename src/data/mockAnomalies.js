@@ -1,44 +1,62 @@
 export const mockAnomalies = [
   {
     id: 1,
-    metric: 'Machine 3 - Vibration',
     severity: 'high',
     detectedAt: '08:12 AM',
-    description: 'Vibration levels 22% above threshold on Line 3 press.',
+    metric: { en: 'Machine 3 - Vibration', hi: 'मशीन 3 - कंपन' },
+    description: {
+      en: 'Vibration levels 22% above threshold on Line 3 press.',
+      hi: 'लाइन 3 प्रेस पर कंपन स्तर सीमा से 22% अधिक है।',
+    },
   },
   {
     id: 2,
-    metric: 'Batch #221 - Cpk',
     severity: 'high',
     detectedAt: '08:40 AM',
-    description: 'Process capability index dropped below 1.33 target.',
+    metric: { en: 'Batch #221 - Cpk', hi: 'बैच #221 - Cpk' },
+    description: {
+      en: 'Process capability index dropped below 1.33 target.',
+      hi: 'प्रक्रिया क्षमता सूचकांक 1.33 लक्ष्य से नीचे गिर गया।',
+    },
   },
   {
     id: 3,
-    metric: 'Line 1 - Temperature',
     severity: 'medium',
     detectedAt: '09:05 AM',
-    description: 'Furnace temperature drifting 4°C above set point.',
+    metric: { en: 'Line 1 - Temperature', hi: 'लाइन 1 - तापमान' },
+    description: {
+      en: 'Furnace temperature drifting 4°C above set point.',
+      hi: 'भट्टी का तापमान निर्धारित बिंदु से 4°C अधिक बढ़ रहा है।',
+    },
   },
   {
     id: 4,
-    metric: 'Conveyor 2 - Speed',
     severity: 'medium',
     detectedAt: '09:20 AM',
-    description: 'Belt speed fluctuating outside normal variance band.',
+    metric: { en: 'Conveyor 2 - Speed', hi: 'कन्वेयर 2 - गति' },
+    description: {
+      en: 'Belt speed fluctuating outside normal variance band.',
+      hi: 'बेल्ट की गति सामान्य सीमा से बाहर उतार-चढ़ाव कर रही है।',
+    },
   },
   {
     id: 5,
-    metric: 'QA Station 4 - Reject Rate',
     severity: 'low',
     detectedAt: '09:35 AM',
-    description: 'Reject rate marginally elevated, within tolerance.',
+    metric: { en: 'QA Station 4 - Reject Rate', hi: 'क्यूए स्टेशन 4 - अस्वीकृति दर' },
+    description: {
+      en: 'Reject rate marginally elevated, within tolerance.',
+      hi: 'अस्वीकृति दर मामूली रूप से बढ़ी है, सहनशीलता सीमा के भीतर।',
+    },
   },
   {
     id: 6,
-    metric: 'Warehouse Sensor 7',
     severity: 'low',
     detectedAt: '09:50 AM',
-    description: 'Intermittent signal dropout, no action required yet.',
+    metric: { en: 'Warehouse Sensor 7', hi: 'गोदाम सेंसर 7' },
+    description: {
+      en: 'Intermittent signal dropout, no action required yet.',
+      hi: 'रुक-रुक कर सिग्नल कट रहा है, अभी कोई कार्रवाई आवश्यक नहीं।',
+    },
   },
 ]

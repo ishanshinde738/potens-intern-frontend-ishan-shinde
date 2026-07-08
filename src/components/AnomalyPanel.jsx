@@ -12,6 +12,12 @@ function AnomalyPanel() {
     low: 'border-slate-500 bg-slate-500/10 text-slate-400',
   }
 
+  const severityLabels = {
+    high: t.severityHigh,
+    medium: t.severityMedium,
+    low: t.severityLow,
+  }
+
   return (
     <div className="bg-slate-800 rounded-xl p-5 shadow-lg">
       <h2 className="text-xl font-semibold text-white mb-4">
@@ -25,19 +31,19 @@ function AnomalyPanel() {
           >
             <div className="flex items-center justify-between">
               <h3 className="text-white font-medium text-sm">
-                {anomaly.metric}
+                {anomaly.metric[language]}
               </h3>
               <span className="text-xs text-slate-500">
                 {anomaly.detectedAt}
               </span>
             </div>
             <p className="text-slate-400 text-sm mt-1">
-              {anomaly.description}
+              {anomaly.description[language]}
             </p>
             <span
               className={`inline-block mt-2 text-xs px-2 py-0.5 rounded-full uppercase tracking-wide ${severityStyles[anomaly.severity]}`}
             >
-              {anomaly.severity}
+              {severityLabels[anomaly.severity]}
             </span>
           </div>
         ))}
